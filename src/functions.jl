@@ -63,7 +63,7 @@ processHeader = function (hh, toLowerCase)
         combinedData = reduce((a, f) -> append!(f[17:length(f)], a), hh[2:length(hh)], init=Vector{UInt8}())
 
         #combinedString = read(IOBuffer(combinedData), String)
-        combinedString = decode(read(IOBuffer(combinedData), UInt8), "latin2")
+        combinedString = decode(combinedData, "latin2")
 
 
         toRet["values"] = map(f -> combinedString[((f-1)*toRet["dimensions"][2]+1):(f*toRet["dimensions"][2])] |> strip, 1:toRet["dimensions"][1])
