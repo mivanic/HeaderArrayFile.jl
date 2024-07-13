@@ -2,7 +2,7 @@ module HeaderArrayFile
 
 include("functions.jl")
 
-using NamedArrays
+using NamedArrays, StringEncodings
 
 readHar = function (fileName, useCoefficientsAsNames=false, toLowerCase=true)
 
