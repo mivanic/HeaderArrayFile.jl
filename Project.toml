@@ -1,7 +1,7 @@
 name = "HeaderArrayFile"
 uuid = "e2354eee-dcc0-4139-addc-ce07950641e0"
 authors = ["Maros Ivanic"]
-version = "1.0.0"
+version = "0.1.0"
 
 [deps]
 NamedArrays = "86f7a689-2022-50b4-a561-43c23ac3c673"
