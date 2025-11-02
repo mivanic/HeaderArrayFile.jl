@@ -1,19 +1,24 @@
 name = "HeaderArrayFile"
 uuid = "e2354eee-dcc0-4139-addc-ce07950641e0"
-authors = ["Maros Ivanic"]
-version = "0.1.0"
+authors = ["Maros Ivanic", "Mitch Phillipson"]
+version = "0.2.0"
 
 [deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
 NamedArrays = "86f7a689-2022-50b4-a561-43c23ac3c673"
+OrderedCollections = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
 StringEncodings = "69024149-9ee7-55f6-a4c4-859efe599b68"
 
 [compat]
-julia = "1.6.7"
-NamedArrays = "0.10.3"
+DataFrames = "1.8.0"
+NamedArrays = "0.10.5"
+OrderedCollections = "1.8.1"
 StringEncodings = "0.3.7"
+julia = "1.10"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+TestItemRunner = "f8b46487-2199-4994-9208-9a1283c18c0a"
 
 [targets]
-test = ["Test"]
+test = ["Test", "TestItemRunner"]
